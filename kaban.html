@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="kaban.css">
+</head>
+
+<body>
+    <main class="container">
+        <h2 class="header">KANBAN BOARD</h2>
+
+        <section class="board">
+
+            <div class="work-container to-do-work-container">
+                <h4 class="container-header">To Do</h4>
+
+                <div class="card">
+                    <div class="delete">
+                        <button class="delete-btn" type="button" aria-label="Delete task">×</button>
+                    </div>
+                    <input type="text" class="card-text" placeholder="Enter your task...">
+                </div>
+            </div>
+
+            <div class="work-container in-progress-work-container">
+                <h4 class="container-header">In Progress</h4>
+
+                <div class="card">
+                    <div class="delete">
+                        <button class="delete-btn" type="button" aria-label="Delete task">×</button>
+                    </div>
+                    <input type="text" class="card-text" placeholder="Enter your task...">
+                </div>
+            </div>
+
+            <div class="work-container done-work-container">
+                <h4 class="container-header">Done</h4>
+
+                <div class="card">
+                    <div class="delete">
+                        <button class="delete-btn" type="button" aria-label="Delete task">×</button>
+                    </div>
+                    <input type="text" class="card-text" placeholder="Enter your task...">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="Tasked">
+            <div class="tasked-btn">
+                <button type="button" class="btn to-do-add-task">
+                    + Add To Do
+                </button>
+            </div>
+
+            <div class="tasked-btn">
+                <button type="button" class="btn in-progress-add-task">
+                    + Add In Progress
+                </button>
+            </div>
+
+            <div class="tasked-btn">
+                <button type="button" class="btn done-add-task">
+                    + Add Done
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="kaban.js"></script>
+</body>
+
+</html>
